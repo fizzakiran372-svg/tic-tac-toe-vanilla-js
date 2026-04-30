@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <section class="controls">
+      <div class="mode">
+        <label><input type="radio" name="mode" value="pvp" checked /> 2 Players</label>
+        <label><input type="radio" name="mode" value="cpu" /> Play vs CPU (Easy)</label>
+      </div>
+      <div class="actions">
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <div id="status" class="status">Turn: <span id="turn">X</span></div>
+
+    <div id="board" class="board" role="grid" aria-label="Tic Tac Toe board">
+      <div class="cell" data-index="0" role="button" aria-label="Cell 1"></div>
+      <div class="cell" data-index="1" role="button" aria-label="Cell 2"></div>
+      <div class="cell" data-index="2" role="button" aria-label="Cell 3"></div>
+
+      <div class="cell" data-index="3" role="button" aria-label="Cell 4"></div>
+      <div class="cell" data-index="4" role="button" aria-label="Cell 5"></div>
+      <div class="cell" data-index="5" role="button" aria-label="Cell 6"></div>
+
+      <div class="cell" data-index="6" role="button" aria-label="Cell 7"></div>
+      <div class="cell" data-index="7" role="button" aria-label="Cell 8"></div>
+      <div class="cell" data-index="8" role="button" aria-label="Cell 9"></div>
+    </div>
+
+    <footer class="footer">
+      <small>Human is always X. CPU plays O in vs-CPU mode.</small>
+    </footer>
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>
